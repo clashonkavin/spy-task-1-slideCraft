@@ -1,0 +1,232 @@
+ *{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    display: grid;
+    width: 45vmin;
+    height: 45vmin;
+    border: 2px solid black;
+    margin: auto;
+    background-color: white;
+    user-select: none;
+}
+
+p{
+  color: white;
+  margin-bottom: 6vmin;
+  font-size: 5vmin;
+  font-weight: 900;
+  width: 100%;
+}
+
+body{
+  background-color: rgb(144 221 255);
+}
+
+.buttonbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.emptyTile{
+  background-color: white;
+  opacity: 0.8;
+}
+
+.square {
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.slot{
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  width: 66%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  align-items: center;
+}
+
+.saved{
+  background-color: #337ab7;
+}
+
+.slotBox{
+  cursor: pointer;
+  width: 100%;
+  height: 75%;
+  flex-direction: column;
+  display: flex;
+  justify-content:space-evenly;
+  align-content: center;
+  margin: 13%;
+}
+
+/* .slotBox {} */
+
+.imgNum{
+  display: inline-block;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+button {
+  margin-top: 10px;
+}
+  
+input {
+  display: block;
+  margin-top: 10px;
+  width: 50%;
+  border: 1px solid black;
+}
+
+input#image-url {
+    width: 50%;
+}
+  
+.sidepanel {
+  opacity: 0.95;
+  display: flex;
+  align-items: center;
+  height: 92%;
+  /* width: 0; */
+  position: fixed;
+  z-index: 1;
+  top: 4%;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-radius: 13px;
+}
+  
+#bar{
+  display: flex;
+  justify-content: space-around;
+}
+.sidepanel .closebtn {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}  
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.fullbox {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 86vh;
+  border-radius: 5vmin;
+  padding: 20px;
+}
+
+h1 {
+  color: #337ab7;
+  font-size: 45px;
+}
+
+button,
+input[type="file"],
+input[type="url"],
+input[type="number"] {
+  display: inline-block;
+  width: 100%;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 2vmin;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+input[type='file']{
+  width: 53%;
+}
+
+button {
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  height: 10vmin;
+  width: 10vmin;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: #23527c;
+}
+
+#size {
+  max-width: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+#container > div:hover {
+  background-color: #aab0b6;
+}
+
+@media (max-width:500px){
+  .container{
+    height: 44vmax;
+    width: 44vmax;
+  }
+
+  button{
+    font-size: 14px;
+    height: 8vmax;
+    width: 8vmax;
+  }    
+}

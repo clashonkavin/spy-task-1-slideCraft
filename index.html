@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlideCraft</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="fullbox">
+    <h1>SlideCraft</h1>
+    <div class="container" id="container"> </div>
+    <div class="buttonbox">
+      <button id="startgamebutton" onclick="BReset()">Start Game</button>
+      <button id="randombutton" onclick="Bshuffle()">Shuffle</button>
+      <button id="solvebutton" onclick="solveIt()">Solve</button>
+      <button id="resetbutton" onclick="BReset()">Reset</button>
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id = 'sBox' class="slotBox">.
+          <p>Your Saved Games</p>
+          <div id="0" class="slot">Slot1</div>.
+          <div id="1" class="slot">Slot2</div>
+          <div id="2" class="slot">Slot3</div>
+          <div id="3" class="slot">Slot4</div>
+          <div id="4" class="slot">Slot5</div>
+        </div>
+      </div>
+      <button class="openbtn" onclick="openNav()">Game slots</button>
+    </div>
+    <div class="bar" id="bar">
+    <input type="file" id="image-upload" accept="image/*">
+    <input type="url" id="image-url" placeholder="Enter image URL">
+    </div>
+    <input type="number" id="size" placeholder="Enter Board size">
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
